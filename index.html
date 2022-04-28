@@ -6,34 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        table,th,td{
-            border:2px solid black;
-            border-collapse: collapse;
-        }
+div{
+    margin: 15px;
+}
+button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+button {background-color: #4CAF50;}  
     </style>
 </head>
-<body>
-    <table style="width:30%;background-color:#FFFFE0;">
-        <tr style="background-color:#BDB76B;color:#ffffff;">
-            <th>Marka</th>
-            <th>Brand</th>
-            <th>Year</th>
-        </tr>
-        <tr>
-            <td>BMW</td>
-            <td>X5</td>
-            <td>2014</td>
-         </tr>
-         <tr> 
-             <td>Chevrolet</td>
-             <td>Cruze</td>
-             <td>2000</td>
-         </tr>
-         <tr>  
-            <td>KIA</td>
-            <td>Optima</td>
-            <td>2018</td>
-        </tr>
-    </table>
+<body >
+    <div>
+        <label for= "name" style="width:90px; display:inline-block">First Name</label>
+        <input type="text" name="name" id="name" required>
+        </div><br>
+
+        <div> 
+            <label for="surname" style="width:90px; display:inline-block">Last Name</label>
+            <input type="surname" name="surname" id="surname">
+        </div><br>
+
+        <div>
+            <label for="company" style="width:90px; display:inline-block">Company </label>
+            <input type="company" name="company">
+        </div><br>
+
+        <div>
+            <label for="email" style="width:90px; display:inline-block">Email</label>
+            <input type="email" name="email" id="ss">
+        </div><br>
+
+        <div>
+            <label for="phone" style="width:90px; display:inline-block">Contact Phone</label>
+            <input type="tel" name="phone" id="phone">
+        </div><br>
+
+        <div>
+        <label for="pwd" style="width:90px; display:inline-block">Password</label>
+        <input type="password" id="pwd" name="pwd">
+        <div>Minimum 5 characters</div><br>
+       </div>
+
+      <div>
+          <label for="link" style="width:90px; display:inline-block">Security Link</label>
+          <input type="link" name="link" id="link">
+          <span>sgfafsg.com</span>
+      </div><br>
+
+      <div>
+          <form>
+              <label for="size" style="width:90px; display:inline-block">Team Size</label><select name="size" id="size">
+                <option value="Please Select" selected="selected">Please Select</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+              </select>
+          </form>
+      </div>
+     <button type="button" onclick="alert('Account created!')">Create My Account</button>
 </body>
 </html>
